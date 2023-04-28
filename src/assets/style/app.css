@@ -1,0 +1,39 @@
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #292a2d #1f2937;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #292a2d4d;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: hsla(240, 1%, 64%, 0.712);
+}
+
+
+.sidebar-link {
+    @apply flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700
+}
+
+.sidebar-link.active {
+    @apply bg-gray-100 dark:bg-gray-700
+}
+
+.icon {
+    @apply w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white
+}
+
+.table-row {
+    @apply bg-white dark:border-gray-700 dark:bg-gray-800
+}
+
+.td-highlight {
+    @apply whitespace-nowrap font-medium text-gray-900 dark:text-white
+}
